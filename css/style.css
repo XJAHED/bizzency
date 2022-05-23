@@ -8,7 +8,7 @@
     --main-color :#0f2f44;
     --primary-font: 'Ubuntu', sans-serif;
     --secound-font: 'Open Sans', sans-serif;
-    --thard-font: 'Abril Fatface', cursive;
+    --thard-font: 'Abril Fatface' ;
     --yellow: #ffc712;
 }
 .btn{
@@ -17,8 +17,7 @@
     font-weight: 400;
     font-size: 20px;
     display:inline-block;
-    border-radius: 7px;
-    
+    border-radius: 7px;    
 }
 a{
     text-decoration: none;
@@ -187,6 +186,7 @@ nav .menu ul li:last-child span{
     background-color: #8484bf;
     color: white;
     margin: 25px 0;
+    font-weight: 300;
 }
 .banner-cnt .btn a{
     color: white;
@@ -209,7 +209,7 @@ nav .menu ul li:last-child span{
 
 /*about section st*/
 #about{
-    padding: 70px;
+    padding: 70px 0;
 }
 #about .about-us{
     width: 50%;
@@ -223,8 +223,8 @@ nav .menu ul li:last-child span{
 #about .about-us h3{
     font-size: 32px;
     font-family: var(--thard-font);
-    font-weight: 400;
     color: #0f2f44;
+    font-weight: 400;
 }
 #about .about-us p{
     padding: 20px 0;
@@ -264,18 +264,27 @@ nav .menu ul li:last-child span{
 /*about section end*/
 
 /*skills section*/
-
+#skills{
+    padding: 50px 0;
+}
 #skills .skills-img{
-    width: 50%;
-    display:block;
+    width: 60%;
+    text-align: center;
+    display: block;
 }
 #skills .skills-img img{
     width: 100%;
+    height:400px;
+    padding: 15px;
 }
 #skills .skills-txt{
-    width: 50%;
+    width: 40%;
     text-align: right;
 } 
+
+
+
+/*all header text*/
 #skills .skills-txt h2{
     font-size: 14px;
     font-family: var(--primary-font);
@@ -285,16 +294,199 @@ nav .menu ul li:last-child span{
 #skills .skills-txt h3{
     font-size: 32px;
     font-family: var(--thard-font);
-    font-weight: 400;
     color: #0f2f44;
+    font-weight: 400;
 }
+/*all header text ends*/
+
+
+
 #skills .skills-txt p{
     padding: 20px 0;
     font-size: 16px;
     font-family: var(--secound-font);
     font-weight: 400;
     color: #0f2f44;
-    
+}  
+
+
+#skills .skills-txt .my-skills .progress{
+    width: 80%;
+    padding: 20px 0;
+}
+#skills .skills-txt .my-skills .progress img{
+    width: 100%;
+
 }
 
-/*skills ends*/
+#skills .skills-txt .my-skills .icon {
+    width: 20%;
+    text-align:right;
+}
+#skills .skills-txt .my-skills .icon img{
+padding: 10px;
+line-height: 50px;
+background-color:#ffffff;
+display: inline-block;
+border: 1px solid #ffffff;
+border-radius: 50%;
+box-shadow: rgba(218, 218, 218, 0.527) 0px 10px 16px 20px;
+}
+/*skills section end*/
+
+/* services section start */
+#services{
+    background-color: #f5f5f5;
+    padding: 60px 0;
+}
+#services .services-txt p{
+    font-size: 14px;
+    font-family: var(--primary-font);
+    font-weight: 300;
+    color: #0f2f44;
+}    
+    #services .services-txt h3{
+    font-size: 32px;
+    font-family:var(--thard-font);
+    color: #0f2f44;
+    font-weight: 400;
+}
+#services .services-txt{
+    text-align: center;
+} 
+
+.services-item{
+    width: 33.33%;
+   padding:55px 15px ;
+}
+.services-item .services-cnt {
+    background-color: #e9e9e9;
+    position: relative;
+}
+
+.services-item .services-cnt .hove{
+   position:absolute;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   padding-top:20px ;
+   background-color: #0f2f44;
+   opacity: 0;
+   visibility: hidden;
+   transition: 0.5s;
+}
+.services-item .services-cnt:hover .hove{
+    opacity: 1;
+    visibility: inherit;
+    border-radius: 10px;
+} 
+
+.services-item .services-cnt .hove .arro{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid var(--yellow);
+    border-radius: 50%;
+    display: inline-block;
+    background-color: var(--yellow);
+    margin-bottom: 50px;
+    position: absolute;
+    bottom:-70px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.services-item .services-cnt .hove h4{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+
+.services-item .services-img{
+    width: 25%;
+    text-align: center;
+
+}
+.services-item .services-details{
+    width: 75%;
+    background-color: #efefef;
+    padding: 30px 20px;
+}
+.services-item .services-details h2{
+    font-size: 20px;
+    font-family: var(--primary-font);
+    padding: 0 0 20px 0px;
+
+}
+.services-item .services-details p{
+    font-size: 14px;
+    color: var(--main-color);
+    text-align: justify;
+    line-height: 20px;
+    font-family: var(--secound-font);
+}
+/* services section end */
+
+
+
+/*portfolio start */
+#portfolio{
+    padding: 100px 0;
+}
+#portfolio .portfolio-txt{
+    text-align: center;
+}
+#portfolio .portfolio-txt h2{
+    font-size: 14px;
+    font-family: var(--primary-font);
+    font-weight: 300;
+    color: #0f2f44;
+}
+#portfolio .portfolio-txt h3{
+    font-size: 32px;
+    font-family: var(--thard-font);
+    color: #0f2f44;
+    font-weight: 400;
+}
+
+.portfolio-img{
+    margin: 50px 0;
+    padding: 0 15px;   
+    width: 33.33%;
+   
+}
+.portfolio-img img{
+    width: 100%;
+    display: block;
+    
+}
+.portfolio-img .overlay{
+    position: absolute;
+    bottom: 0;
+    background-color:#fff;
+    width:100% ;
+    height: 75px;
+    text-align: center;
+    line-height:75px;
+    transform: scaleY(0);
+    transition: 0.4s;
+    transform-origin: bottom;
+}
+.portfolio-cnt{
+    position: relative;
+} 
+
+.portfolio-img:hover .overlay{
+    transform: scaleY(1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.portfolio-img .overlay p{
+    font-size: 20px;
+    color: #0f2f44;
+    font-family:var(--secound-font);
+    font-weight: 600;
+}
+/* portfolio end */
